@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perguntas</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 2rem auto; line-height: 1.6; padding: 0 1rem; }
+    .sublinhado { text-decoration: underline; }
+    .resposta { font-style: italic; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Perguntas e Respostas</h1>
+
+  <ol>
+    <li>
+      <p><strong>O que são operações de “Commit”, “Push” e “Pop” efetuadas num repositório?</strong></p>
+      <p class="resposta">Resposta:</p>
+      <ul>
+        <li><strong>Commit:</strong> grava no repositório local um registo das alterações que estão em <em>staging</em>, acompanhado de uma mensagem descritiva. Fica no histórico local e ainda não chega ao servidor.</li>
+        <li><strong>Push:</strong> envia os commits locais para o repositório remoto, atualizando-o.</li>
+        <li><strong>Pop:</strong> o comando existente é o <span class="sublinhado">git stash pop</span>, que volta a aplicar no diretório de trabalho as alterações guardadas temporariamente com <span class="sublinhado">git stash</span> e remove-as do stash.</li>
+      </ul>
+    </li>
+
+    <li>
+      <p><strong>Quais são as vantagens de usar Branchs num repositório git?</strong></p>
+      <p class="resposta">Resposta:</p>
+      <p>Os branches permitem trabalhar em funcionalidades ou correções <strong>em paralelo</strong>, isoladas do ramo principal (<em>main</em>), que se mantém estável. Facilitam a <span class="sublinhado">experimentação</span> (um ramo falhado descarta-se sem consequências) e o <span class="sublinhado">trabalho em equipa</span>, pois cada pessoa trabalha no seu ramo e depois integra as alterações com <em>merge</em> ou <em>pull request</em>.</p>
+    </li>
+
+    <li>
+      <p><strong>Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em que consistem e como podem ser resolvidos esses conflitos?</strong></p>
+      <p class="resposta">Resposta:</p>
+      <p>Um conflito acontece quando o Git <strong>não consegue juntar automaticamente</strong> duas versões do mesmo ficheiro, normalmente porque as mesmas linhas foram alteradas de forma diferente em cada uma. Nesse caso, o Git para e marca no ficheiro as duas versões.</p>
+      <p>Para resolver o conflito, abre-se o ficheiro onde o Git marcou as duas versões, escolhe-se qual delas fica (ou juntam-se as duas) e apagam-se os símbolos que o Git colocou. Por fim, guarda-se o ficheiro e executa-se <span class="sublinhado">git add</span> seguido de <span class="sublinhado">git commit</span> para concluir.</p>
+    </li>
+
+    <li>
+      <p><strong>“Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?</strong></p>
+      <p class="resposta">Resposta:</p>
+      <ul>
+        <li><strong>Clone:</strong> cria uma cópia de um repositório remoto no nosso PC, com todo o histórico, e mantém a ligação ao repositório original.</li>
+        <li><strong>Fork:</strong> cria uma cópia do repositório na nossa conta do GitHub, independente do original, onde podemos fazer alterações sem ter permissões nele. Essas alterações podem ser propostas ao projeto original através de um <span class="sublinhado">Pull Request</span>.</li>
+        <li><strong>Diferença principal:</strong> o Clone é uma cópia <em>local</em> (no PC) e o Fork é uma cópia <em>remota</em> (na nossa conta).</li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>
