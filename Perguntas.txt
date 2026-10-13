@@ -11,6 +11,11 @@ Os branches permitem trabalhar em funcionalidades ou correções em paralelo, is
 
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
+RESPOSTA:
+
+Um conflito acontece quando o Git não consegue juntar automaticamente duas versões do mesmo ficheiro, normalmente porque as mesmas linhas foram alteradas de forma diferente em cada uma. Nesse caso, o Git para e marca no ficheiro as duas versões.
+Para resolver o conflito, abre-se o ficheiro onde o Git marcou as duas versões, escolhe-se qual delas fica (ou juntam-se as duas) e apagam-se os símbolos que o Git colocou. Por fim, guarda-se o ficheiro e executa-se "git add" seguido de "git commit" para concluir.
+
 
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
