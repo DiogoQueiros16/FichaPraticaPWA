@@ -19,3 +19,8 @@ Para resolver o conflito, abre-se o ficheiro onde o Git marcou as duas versões,
 
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
+RESPOSTA:
+
+Clone: cria uma cópia de um repositório remoto no nosso PC, com todo o histórico, e mantém a ligação ao repositório original.
+Fork: cria uma cópia do repositório na nossa conta do GitHub, independente do original, onde podemos fazer alterações sem ter permissões nele. Essas alterações podem ser propostas ao projeto original através de um Pull Request.
+Diferença principal: o Clone é uma cópia local (no PC) e o Fork é uma cópia remota (na nossa conta).
