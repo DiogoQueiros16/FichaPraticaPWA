@@ -1,6 +1,11 @@
 1 - O que são operações de “Commit”, “Push” e “Pop” efetuadas num repositório?
+
 2 – Quais sáo as vantagens de usar Branchs num repositório git?
+RESPOSTA:
+Os branches permitem trabalhar em funcionalidades ou correções em paralelo, isoladas do ramo principal (main), que se mantém estável. Facilitam a experimentação (um ramo falhado descarta-se sem consequências) e o trabalho em equipa, pois cada pessoa trabalha no seu ramo e depois integra as alterações com merge ou pull request.
+
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
+
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
